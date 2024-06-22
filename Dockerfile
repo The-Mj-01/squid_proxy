@@ -4,7 +4,7 @@ FROM ubuntu/squid:latest
 RUN apt-get update && apt-get install -y apache2-utils
 
 # ایجاد فایل passwd با یک کاربر و رمز عبور
-RUN htpasswd -c -b /etc/squid/passwd username password
+RUN htpasswd -c -b /etc/squid/passwd ramzinex kHB634h1@?£j
 
 # کپی کردن فایل‌های پیکربندی
 COPY squid.conf /etc/squid/squid.conf

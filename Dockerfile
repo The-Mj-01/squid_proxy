@@ -1,7 +1,7 @@
 FROM ubuntu/squid:latest
 
 # نصب ابزارهای مورد نیاز
-RUN apt-get update && apt-get install -y apache2-utils openssl
+RUN apt-get update && apt-get install -y apache2-utils openssl squid-openssl
 
 # ایجاد دایرکتوری برای گواهینامه‌ها
 RUN mkdir -p /etc/squid/ssl_cert
